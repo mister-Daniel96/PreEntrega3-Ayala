@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --poppins: 'Poppins', sans-serif;
+    --open-sans: 'Open Sans', sans-serif;
+    --tilt-neon: 'Tilt Neon', cursive;
+
+    --padding-container: 80px 0;
+}
+
+
+body {
+    font-family: var(--open-sans);
+    color: white;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.hero {
+    min-height: 100vh;
+    padding-top: 60px;
+    background-image: linear-gradient(150deg, #243949 10%, #517fa400 100%), url(../images/fondoIndex.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2) !important;
+    backdrop-filter: blur(10px);
+    z-index: 100;
+
+    &-brand {
+        font-weight: bold;
+    }
+
+    &-collapse {
+        justify-content: end;
+        margin-right: 100px;
+    }
+
+    &-nav {
+        gap: 20px;
+    }
+
+    &-nav li:hover {
+        border-bottom: 2px solid white;
+    }
+
+
+}
+
+/* BANNER */
+.hero__main {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 100px;
+
+    .hero__texts {
+        width: 50%;
+
+        .hero__title {
+            display: flex;
+            align-items: center;
+            font-family: var(--tilt-neon);
+            margin: 40px 0;
+            font-size: 80px;
+        }
+
+        .hero__paragraph {
+            margin-bottom: 40px;
+
+        }
+
+        .hero__cta {
+            display: inline-block;
+            text-decoration: none;
+            width: 200px;
+            padding: 10px 30px;
+            background-color: black;
+            color: #ffff;
+            border-radius: 10px;
+            text-align: center;
+        }
+    }
+
+    .hero__image {
+        width: 50%;
+        max-width: 600px;
+        /*  text-align: center; */
+
+
+        .hero__img {
+            width: 70%;
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+
+}

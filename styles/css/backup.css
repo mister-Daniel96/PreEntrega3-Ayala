@@ -37,56 +37,7 @@ body {
 
 }
 
-/* BARRA DE NAVEGACION  */
-/* 
-.hero__nav {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    max-width: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 200;
 
-}
-
-.hero__logo {
-    display: inherit;
-    align-items: center;
-    font-family: var(--tilt-neon);
-    margin-left: 75px;
-}
-
-.hero__nav .hero__menu {
-    display: inherit;
-    flex-wrap: wrap;
-    list-style: none;
-    align-items: center;
-
-}
-
-.hero__menu li {
-    margin: 8px 25px;
-    transition: 0.2s;
-}
-
-.hero__menu li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 2px 4px;
-    border: none;
-
-} 
-
-.hero__menu li:hover {
-    border-bottom: 2px solid white;
-}
-*/
 .navbar {
     position: fixed;
     top: 0;
@@ -569,41 +520,41 @@ body {
 
 .item1 {
     grid-area: item1;
-    background-image: url(../images/item1.jpg);
+    background-image: url(../../images/item1.jpg);
     transition: all 1s;
 }
 
 .item1:hover {
-    background: linear-gradient(0deg, #243949 10%, #517fa446 100%), url(../images/item1.jpg);
+    background: linear-gradient(0deg, #243949 10%, #517fa446 100%), url(../../images/item1.jpg);
 }
 
 .item2 {
     grid-area: item2;
-    background-image: url(../images/item2.jpg);
-
+ /*    background-image: url(../images/item2.jpg); */
+    background-image: url(../../images/item2.jpg);
 }
 
 .item3 {
     grid-area: item3;
-    background-image: url(../images/item3.jpg);
+    background-image: url(../../images/item3.jpg);
 
 }
 
 .item4 {
     grid-area: item4;
-    background-image: url(../images/item4.jpg);
+    background-image: url(../../images/item4.jpg);
 
 }
 
 .item5 {
     grid-area: item5;
-    background-image: url(../images/item2.jpg);
+    background-image: url(../../images/item2.jpg);
 
 }
 
 .item6 {
     grid-area: item6;
-    background-image: url(../images/item6.jpg);
+    background-image: url(../../images/item6.jpg);
 
 }
 
