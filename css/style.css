@@ -1,0 +1,815 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --poppins: 'Poppins', sans-serif;
+    --open-sans: 'Open Sans', sans-serif;
+    --tilt-neon: 'Tilt Neon', cursive;
+
+    --padding-container: 80px 0;
+}
+
+
+body {
+    font-family: var(--open-sans);
+    color: white;
+}
+
+.container {
+    width: 90%;
+    /* probamos con 100 anteriormente */
+    max-width: 1200px;
+    margin: 0 auto;
+    /*  overflow: hidden; */
+    padding: 40px 0;
+}
+
+.hero {
+    min-height: 100vh;
+    padding-top: 60px;
+    background-image: linear-gradient(150deg, #243949 10%, #517fa400 100%), url(../images/fondoIndex.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/* BARRA DE NAVEGACION  */
+/* 
+.hero__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    max-width: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+
+}
+
+.hero__logo {
+    display: inherit;
+    align-items: center;
+    font-family: var(--tilt-neon);
+    margin-left: 75px;
+}
+
+.hero__nav .hero__menu {
+    display: inherit;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+
+}
+
+.hero__menu li {
+    margin: 8px 25px;
+    transition: 0.2s;
+}
+
+.hero__menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 2px 4px;
+    border: none;
+
+} 
+
+.hero__menu li:hover {
+    border-bottom: 2px solid white;
+}
+*/
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* right: 0; */
+    background: rgba(255, 255, 255, 0.2) !important;
+    backdrop-filter: blur(10px);
+    z-index: 100;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-collapse {
+    justify-content: end;
+    margin-right: 100px;
+}
+
+.navbar-nav {
+    gap: 20px;
+}
+
+.navbar-nav li:hover {
+    border-bottom: 2px solid white;
+}
+
+/* .nav-link{
+    margin-right: 20px;
+} */
+
+/* NAVVVVVVVVVVVVVVVVVVVVVVV */
+
+/* BANNER */
+.hero__main {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 100px;
+}
+
+.hero__texts {
+    width: 50%;
+}
+
+.hero__title {
+    display: flex;
+    align-items: center;
+    font-family: var(--tilt-neon);
+    margin: 40px 0;
+    font-size: 80px;
+}
+
+.hero__paragraph {
+    margin-bottom: 40px;
+
+}
+
+.hero__cta {
+    display: inline-block;
+    text-decoration: none;
+    width: 200px;
+    padding: 10px 30px;
+    background-color: black;
+    color: #ffff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.hero__image {
+    width: 50%;
+    max-width: 600px;
+    /*  text-align: center; */
+}
+
+.hero__img {
+    width: 70%;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* COMENTARIOS */
+.section {
+    /* color: #243949; */
+    color: black;
+    width: 100%;
+    max-width: none;
+    background-color: #ffff;
+}
+
+.section__title {
+    text-align: center;
+    margin: 20px 0 40px 0;
+}
+
+.section__cards {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.section__card {
+    width: 30%;
+    /*  height: 210px; */
+    display: flex;
+    padding: 15px 25px;
+    background-color: #243949d2;
+    ;
+    align-items: center;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 5px;
+    /*   gap:60px; */
+}
+
+.section__image {
+    width: 45%;
+    text-align: center;
+}
+
+.section__image .section__img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: block;
+    margin: 5px auto;
+}
+
+.section__name h4 {
+    font-size: 15px;
+}
+
+.star {
+    width: 15px;
+}
+
+.section__texts p {
+    /* width: auto; */
+    font-size: 15px;
+    text-align: justify;
+    margin: 0 15px;
+    /*    margin-top: -25px; */
+}
+
+/* footer *--------------- */
+.footer {
+    background-color: black;
+    color: white;
+    /* Funciona con el padding-bottom y min-height:100vh */
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+.footer__container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* width: 100%;=================================*/
+    max-width: none;
+}
+
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+
+}
+
+.footer__info h4 {
+    margin: 20px 0;
+}
+
+.footer__info p {
+    text-align: start;
+}
+
+/* ============== */
+.footer__redes {
+    width: 25%;
+}
+
+.footer__redes h4 {
+    margin: 20px 0;
+}
+
+.red {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.red a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.red__type {
+    margin-left: 10px;
+}
+
+.red__img {
+    width: 30px;
+}
+
+.insta {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    border-radius: 5px;
+}
+
+/* ==================== */
+/* .footer{
+    overflow: hidden;
+} */
+.footer__myInfo {
+    width: 25%;
+}
+
+.footer__myInfo h4 {
+    margin: 20px 0;
+}
+
+.footer__ubicacion,
+.footer__number,
+.footer__email {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+}
+
+
+.footer__ubicacion span,
+.footer__number span,
+.footer__email span {
+    margin-left: 10px;
+    width: 100%;
+}
+
+.footer__container2 {
+    width: 100%;
+    max-width: none;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid black;
+}
+
+/* CONTACTOOOOOOOOOOOOOOOOOOOOOOOOOO */
+
+.hero-contacto {
+    min-height: 0;
+    background-image: none;
+    background-color: rgba(0, 0, 0, 0.274);
+}
+
+/* MAIN- CONTACTO*/
+.main__contacto {
+    min-height: 100vh;
+    /* sirve para la pantalla principal del Contacto */
+    background-color: rgba(0, 0, 0, 0.274);
+    /*   background-image: url(../images/formularioFondo.jpg); */
+}
+
+/* .main__contacto__main {
+   
+} */
+
+.main__form {
+    width: 90%;
+    /* IMPORTANTE */
+    background-color: #fd5949;
+    /*   background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter:calc(10px); */
+    margin: 0 auto;
+    /* margin-top: 50px; */
+    /* ANTES ERA 150 */
+    padding: 10px 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(136, 44, 44);
+    /* overflow: hidden; */
+
+}
+
+.title__form {
+    /* width: 30%; */
+    max-height: 400px;
+    margin: auto 0;
+}
+
+.title-form {
+    /* para desaparecer el colapso de margen 
+    dimos un padding al contenedor mayor */
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.title__form span {
+    display: block;
+
+    text-align: center;
+    color: #ffff;
+}
+
+/* .container__form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+} */
+
+.questions {
+    /* width: 40%; */
+    /* era 60 */
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+    padding-top: 30px;
+}
+
+.question__item {
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    justify-content: star;
+    gap: 20px;
+
+}
+
+.question__item textarea {
+    margin: auto 0;
+    outline: none;
+    padding: 10px;
+}
+
+.question__button {
+    display: block;
+    cursor: pointer;
+    width: 40%;
+    color: #fd5949;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 30px
+}
+
+/* .form-img{
+    
+} */
+.name__item {
+    width: 70px;
+    color: white;
+}
+
+.input {
+    padding: 2px 10px;
+    font-size: 15px;
+    background-color: #fd5949;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    background-color: transparent;
+    width: 90%;
+}
+
+/* .input::placeholder{
+    display: none;
+} */
+.question__item-text {
+    margin-top: 40px;
+}
+
+.input-text {
+    resize: none;
+    width: 300px;
+    border-radius: 5px;
+}
+
+
+/* mapa */
+.mapa {
+    /* width: 30%; */
+    /* era 40 */
+    /* overflow: hidden; */
+    display: flex;
+    align-items: center;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+/* SERVICIOSSSSSSSSSSSSSSSSSSSSSS */
+
+.main__producto {
+    /*  min-height: 100vh; */
+    background-color: rgba(0, 0, 0, 0.274);
+    /* margin-bottom: 305px; */
+}
+
+.carousel {
+    position: relative;
+    z-index: 1;
+
+}
+
+.d-block {
+    /* height: 300px; */
+
+    overflow: cover;
+}
+
+.carousel-caption>h5 {
+    text-transform: uppercase;
+    font-size: 80px;
+    font-weight: bold;
+
+}
+
+/* GRIDDDDDDDD */
+
+.collage__title {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0 10px 0;
+    margin-bottom: 20px;
+    font-weight: bold;
+    border-bottom: 3px solid white;
+}
+
+.containerGrid {
+    width: 90%;
+    height: 600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+        "item1 item2 item3 item4"
+        "item1 item5 item6 item6";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, ifr);
+    /* overflow: hidden; */
+    gap: 5px;
+
+
+}
+
+.grid-item {
+    display: inherit;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*   overflow: hidden; */
+    place-items: center;
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.grid-item:hover {
+    font-size: 45px;
+    text-shadow: 4px 4px black;
+    color: white
+}
+
+.item1 {
+    grid-area: item1;
+    background-image: url(../images/item1.jpg);
+    transition: all 1s;
+}
+
+.item1:hover {
+    background: linear-gradient(0deg, #243949 10%, #517fa446 100%), url(../images/item1.jpg);
+}
+
+.item2 {
+    grid-area: item2;
+    background-image: url(../images/item2.jpg);
+
+}
+
+.item3 {
+    grid-area: item3;
+    background-image: url(../images/item3.jpg);
+
+}
+
+.item4 {
+    grid-area: item4;
+    background-image: url(../images/item4.jpg);
+
+}
+
+.item5 {
+    grid-area: item5;
+    background-image: url(../images/item2.jpg);
+
+}
+
+.item6 {
+    grid-area: item6;
+    background-image: url(../images/item6.jpg);
+
+}
+
+@media screen and (max-width:576px) {
+    /* 400px */
+
+    /* BARRA DE NAVEGACION */
+
+    /*  .hero__nav {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 5px;
+        display: none;
+    }
+
+    .hero__logo {
+        width: 150px;
+        text-align: center;
+        padding: 0 20px;
+        margin: 0 auto;
+        margin-bottom: 5px;
+        border-bottom: 2px solid white;
+    }
+
+    .hero__nav .hero__menu {
+        display: inherit;
+        margin-right: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero__menu li {
+        margin: 8px 10px;
+    } */
+
+    /* NUEVO CAMBIO DEL NAV */
+    /* .hero{
+        padding-top: 20px;
+    } */
+
+
+
+    /* //////////////////////////////////////// */
+
+    .hero__main {
+        flex-direction: column-reverse;
+    }
+
+    .hero__texts {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero__title {
+        display: flex;
+        justify-content: center;
+        font-size: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .hero__paragraph {
+        text-align: justify;
+    }
+
+    .hero__cta {
+        display: block;
+        width: 60%;
+        margin: 0 auto;
+
+    }
+
+    .hero__image {
+        width: 60%;
+        max-width: 600px;
+        /*  text-align: center; */
+        /* overflow: hidden; */
+    }
+
+    .hero__img {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        /*     filter: drop-shadow(1px 1px  10px black);  Lo que hace es que se sobre pone*/
+    }
+
+    /* COMENTARIO */
+
+
+    .section__cards {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .section__card {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .section__img {
+        object-fit: cover;
+    }
+
+    /* footer */
+
+
+    .footer__info {
+        width: 100%;
+    }
+
+    .footer__info h4 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer__info p {
+        text-align: justify;
+    }
+
+    /* ============== */
+    .footer__redes {
+        width: 50%;
+        margin-top: 10px;
+    }
+
+
+    /* ==================== */
+    .footer__myInfo {
+        width: 50%;
+        margin-top: 10px;
+        padding-left: 20px;
+        border-left: 1px solid white;
+        /* overflow: hidden; */
+    }
+
+    .footer__myInfo h4 {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .footer__container2 {
+        width: 100%;
+        max-width: none;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-top: 1px solid black;
+    }
+
+    /* .footer__ubicacion span,
+    .footer__number span,
+    .footer__email span {
+       width: calc(100%-30px);
+    } */
+
+    /* ===============PRODUCTO================================ */
+
+    /* .main__producto {
+        margin-bottom: 250px;
+    } */
+
+    .d-block {
+        height: 300px;
+        overflow: cover;
+    }
+
+
+    /* GRIDDDDDDDD */
+
+    .collage__title {
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    .containerGrid {
+        width: 90%;
+
+        margin: 0 auto;
+        display: grid;
+        grid-template-areas:
+            "item1 item1  "
+            "item2 item3 "
+            "item4 item5"
+            "item6 item6";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 5px;
+
+
+    }
+
+    .grid-item {
+        font-size: 20px;
+        color: white;
+    }
+
+    .grid-item:hover {
+        font-size: 25px;
+        text-shadow: 2px 2px black;
+
+    }
+
+
+    /* CONTACTOOOOO */
+
+
+    
+
+}

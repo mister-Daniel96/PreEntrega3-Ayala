@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- FONT GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&family=Tilt+Neon&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="hero">
+        <!--  <nav class="hero__nav container"> container
+            <h1 class="hero__logo">ShoesMen</h1>
+            <ul class="hero__menu">
+                <li><a href="#">Home</a></li >
+                <li><a href="./pages/productos.html">Productos</a></li>
+                <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                <li><a href="./pages/faq.html">FAQ</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav> -->
+
+        <nav class="navbar navbar-expand-sm bg-body-tertiary .navbar-expand">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">ShoesMen</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/faq.html">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="hero__main container">
+            <div class="hero__texts">
+                <h1 class="hero__title">ShoesMen</h1>
+                <p class="hero__paragraph">Sabemos que demasiado no es suficiente para tí que amas los zapatos con
+                    creces. Por eso te traemos la variedad de calzado que tanto te mereces.</p>
+                <a href="./pages/servicios.html" class="hero__cta">Ver mas</a>
+            </div>
+            <figure class="hero__image">
+                <img src="./images/logo.png" alt="" class="hero__img">
+            </figure>
+        </section>
+    </header>
+
+    <main class="main">
+        <section class="section container">
+            <h1 class="section__title">¿Que dicen de nosotros?</h1>
+            <div class="section__cards">
+                <article class="section__card">
+                    <figure class="section__image">
+                        <img src="./images/cliente1.jpg" alt="" class="section__img">
+                        <figcaption class="section__name">
+                            <h4>Kevin Contreras</h4>
+                            <div class="section__calificacion">
+                                <i class="fa-sharp fa-solid fa-star star"></i>
+                                <i class="fa-sharp fa-solid fa-star star"></i>
+                                <i class="fa-sharp fa-solid fa-star star"></i>
+                                <i class="fa-sharp fa-solid fa-star star"></i>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <div class="section__texts">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, assumenda!</p>
+                    </div>
+                </article>
+                <article class="section__card">
+                    <figure class="section__image">
+                        <img src="./images/cliente2.jpg" alt="" class="section__img">
+                        <figcaption class="section__name">
+                            <h4>Kevin Contreras</h4>
+                            <div class="section__calificacion">
+                                <i class="fa-sharp fa-solid fa-star star"></i>
+                                <i class="fa-sharp fa-solid fa-star star"></i>
+                                <i class="fa-sharp fa-solid fa-star star"></i>
+                                <i class="fa-sharp fa-solid fa-star star"></i>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <div class="section__texts">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, assumenda!</p>
+                    </div>
+                </article>
+                <article class="section__card">
+                    <figure class="section__image">
+                        <img src="./images/cliente3.jpg" alt="" class="section__img">
+                        <figcaption class="section__name">
+                            <h4>Kevin Contreras</h4>
+                            <div class="section__calificacion">
+                                <i class="fa-sharp fa-solid fa-star star"></i>
+                                <i class="fa-sharp fa-solid fa-star star"></i>
+                                <i class="fa-sharp fa-solid fa-star star"></i>
+                                <i class="fa-sharp fa-solid fa-star star"></i>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <div class="section__texts">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, assumenda!</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </main>
+    <!-- FOOTER         ************************** -->
+    <footer class="footer">
+
+        <section class="footer__container1 container">
+            <div class="footer__info ">
+                <h4>Mas Informacion de la compañia</h4>
+                <p>Esta compañia esta dedicada a la venta de productos
+                    importados de la mas alta calidad y precios del mercado
+                </p>
+            </div>
+            <div class="footer__redes">
+                <h4>Redes Sociales</h4>
+                <div class="red">
+                    <a href="#"><img src="./svg/facebook.svg" alt="" class="red__img">
+                        <span class="red__type">Siguenos en facebook</span></a>
+
+                </div>
+                <div class="red">
+                    <a href="#"><img src="./svg/instagram.svg" alt="" class="red__img insta">
+                        <span class="red__type"> Siguenos en instagram</span></a>
+                </div>
+                <div class="red">
+                    <a href="#"><img src="./svg/whatsapp.svg" alt="" class="red__img">
+                        <span class="red__type"> Siguenos en whatsapp</span></a>
+
+                </div>
+            </div>
+            <div class="footer__myInfo">
+                <h4>Informaciond de Contacto</h4>
+                <div class="footer__ubicacion ">
+                    <img src="./svg/home.svg" alt="" class="red__img">
+                    <span>ShoesMen</span>
+                </div>
+                <div class="footer__number ">
+                    <img src="./svg/phone.svg" alt="" class="red__img">
+                    <span>+51 987 563 214</span>
+                </div>
+                <div class="footer__email ">
+                    <img src="./svg/gmail.svg" alt="" class="red__img">
+                    <span>ShoesMen @gmail.com</span>
+                </div>
+            </div>
+            <p class="footer__container2 container">Todos los
+                derechos reservador por ShoesMen </p>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
