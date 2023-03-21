@@ -26,7 +26,7 @@ body {
 .hero {
   min-height: 100vh;
   padding-top: 60px;
-  background-image: linear-gradient(150deg, #243949 10%, rgba(81, 127, 164, 0) 100%), url(../images/fondoIndex.jpg);
+  background-image: linear-gradient(150deg, #243949 10%, rgba(81, 127, 164, 0) 100%), url(../../images/fondoIndex.jpg);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -95,6 +95,151 @@ body {
   display: block;
   text-align: center;
   margin: 0 auto;
+}
+
+/* COMENTARIOS */
+/* COMENTARIOS */
+.section {
+  /* color: #243949; */
+  color: black;
+  width: 100%;
+  max-width: none;
+  background-color: white;
+}
+.section__title {
+  text-align: center;
+  margin: 20px 0 40px 0;
+}
+.section__cards {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+.section__cards .section__card {
+  width: 30%;
+  /*  height: 210px; */
+  display: flex;
+  padding: 15px 25px;
+  background-color: rgba(36, 57, 73, 0.8235294118);
+  align-items: center;
+  box-shadow: 5px 5px 10px black;
+  border-radius: 5px;
+  /*   gap:60px; */
+}
+.section__cards .section__card .section__image {
+  width: 45%;
+  text-align: center;
+}
+.section__cards .section__card .section__image .section__img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: block;
+  margin: 5px auto;
+}
+.section__cards .section__card .section__image .section__name h4 {
+  font-size: 15px;
+}
+.section__cards .section__card .section__image > .star {
+  width: 15px;
+}
+.section__cards .section__card .section__texts p {
+  /* width: auto; */
+  font-size: 15px;
+  text-align: justify;
+  margin: 0 15px;
+  /*    margin-top: -25px; */
+}
+
+/*    FOOTER            */
+/* footer *--------------- */
+.footer {
+  background-color: black;
+  color: white;
+  /* Funciona con el padding-bottom y min-height:100vh */
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+.footer .footer__container1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* width: 100%;=================================*/
+  max-width: none;
+  /* ============== */
+  /* ==================== */
+  /* .footer{
+      overflow: hidden;
+  } */
+}
+.footer .footer__container1 .footer__info {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.footer .footer__container1 .footer__info h4 {
+  margin: 20px 0;
+}
+.footer .footer__container1 .footer__info p {
+  text-align: start;
+}
+.footer .footer__container1 .footer__redes {
+  width: 25%;
+}
+.footer .footer__container1 .footer__redes h4 {
+  margin: 20px 0;
+}
+.footer .footer__container1 .footer__redes .red {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer__container1 .footer__redes .red a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.footer .footer__container1 .footer__redes .red a .red__img {
+  width: 30px;
+}
+.footer .footer__container1 .footer__redes .red a .insta {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  border-radius: 5px;
+}
+.footer .footer__container1 .footer__redes .red .red__type {
+  margin-left: 10px;
+}
+.footer .footer__container1 .footer__myInfo {
+  width: 25%;
+}
+.footer .footer__container1 .footer__myInfo h4 {
+  margin: 20px 0;
+}
+.footer .footer__container1 .footer__myInfo .footer__ubicacion,
+.footer .footer__container1 .footer__myInfo .footer__number,
+.footer .footer__container1 .footer__myInfo .footer__email {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
+}
+.footer .footer__container1 .footer__myInfo .footer__ubicacion span,
+.footer .footer__container1 .footer__myInfo .footer__number span,
+.footer .footer__container1 .footer__myInfo .footer__email span {
+  /* coge para los span de los 3 */
+  margin-left: 10px;
+  width: 100%;
+}
+.footer .footer__container1 .footer__container2 {
+  width: 100%;
+  max-width: none;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid black;
 }
 
 /*# sourceMappingURL=style.css.map */
