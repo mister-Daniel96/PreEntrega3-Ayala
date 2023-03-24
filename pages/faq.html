@@ -5,7 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description"
+        content="Encuentra las mejores zapatillas para todos los estilos y ocasiones en nuestra tienda en línea. Ofrecemos una amplia variedad de marcas reconocidas y diseños exclusivos para que puedas expresar tu personalidad con tu calzado. Desde zapatillas para running hasta zapatillas de moda, nuestra selección cuenta con modelos para hombres, mujeres y niños. Además, nuestra atención al cliente es incomparable, ofreciendo asesoría personalizada y envío rápido para que puedas disfrutar de tus nuevas zapatillas en poco tiempo. ¡Visítanos ahora y encuentra tu par perfecto de zapatillas!">
+    <meta name="keywords"
+        content="hombres, mujeres, niños, atención al cliente, asesoría personalizada, envío rápido, par perfecto">
+
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+    <title>ShoesMen</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -21,7 +27,7 @@
 </head>
 
 <body>
-    <header class="hero">
+    <header class="hero hero-faq">
         <nav class="navbar navbar-expand-sm bg-body-tertiary .navbar-expand">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">ShoesMen</a>
@@ -54,24 +60,39 @@
 
     </header>
 
-    <main class="main">
-        <div class="questions">
-            <h1 class="faq">FAQ</h1>
-            <form action="" class="form">
-                <label for="">
-                    <input type="text" placeholder="Nombre">
-                </label>
-                <label for="">
-                    <input type="text" placeholder="Apellido">
-                </label>
-                <label for="">
-                    <input type="email" placeholder="Correo">
-                </label>
-                <label for="">
-                    <textarea name="" id="" cols="30" rows="10" placeholder=" Asunto"></textarea>
-                </label>
-                <input type="submit" value="Enviar pregunta">
-            </form>
+    <main class="main__faq">
+        <div class="faq container">
+            <div class="container-fluid ">
+                <div class="row ">
+                    <h1 class="col-lg-12 grid-item-faq">Preguntas Frecuentes</h1>
+                </div>
+                <div class="row ">
+                    <div class="col-lg-6 grid-item-faq"><a href="#">¿Es seguro comprar Aqui?</a></div>
+                    <div class="col-lg-6 grid-item-faq"><a href="#">¿Cómo se realizan los envíos?</a></div>
+                </div>
+                <div class="row ">
+                    <div class="col-lg-6 grid-item-faq"><a href="#">¿Dónde puedo recibir mi pedido?</a></div>
+                    <div class="col-lg-6 grid-item-faq"><a href="#">¿Cuál es el plazo para realizar un cambio?</a></div>
+                </div>
+                <div class="row ">
+                    <div class="col-lg-6 grid-item-faq"><a href="#">¿Qué debo hacer si el producto no llega en buen estado?</a></div>
+                    <div class="col-lg-6 grid-item-faq"><a href="#">¿Qué son los cupones de descuento?</a></div>
+                </div>
+                <div class="row ">
+                    <div class="col-lg-6 grid-item-faq"><a href="#">¿Por qué me piden ingresar mis datos personales?</a></div>
+                    <div class="col-lg-6 grid-item-faq"><a href="#">¿Para qué sirve Registrarme o crear una cuenta en Mio?</a></div>
+                </div>
+                <div class="row ">
+                    <div class="col-lg-6 grid-item-faq"><a href="#">¿Tienen un local físico?</a></div>
+                    <div class="col-lg-6 grid-item-faq"><a href="#">¿Cómo sé qué número soy?</a></div>
+                </div>
+
+                <div class="row ">
+                    <input type="text" class="col-lg-12 grid-item-faq" placeholder="Ingrese otra pregunta frecuente">;
+                <input type="submit">
+                  
+                </div>
+            </div>
         </div>
     </main>
     <!-- FOOTER         ************************** -->
@@ -87,19 +108,19 @@
             <div class="footer__redes">
                 <h4>Redes Sociales</h4>
                 <div class="red">
-                    <a href="#"><img src="./svg/facebook.svg" alt="" class="red__img">
+                    <a href="#"><img src="../svg/facebook.svg" alt="" class="red__img">
                         <span class="red__type">Siguenos en facebook</span></a>
 
                 </div>
 
                 <div class="red">
-                    <a href="#"><img src="./svg/instagram.svg" alt="" class="red__img insta">
+                    <a href="#"><img src="../svg/instagram.svg" alt="" class="red__img insta">
                         <span class="red__type"> Siguenos en instagram</span></a>
 
                 </div>
 
                 <div class="red">
-                    <a href="#"><img src="./svg/whatsapp.svg" alt="" class="red__img">
+                    <a href="#"><img src="../svg/whatsapp.svg" alt="" class="red__img">
                         <span class="red__type"> Siguenos en whatsapp</span></a>
 
                 </div>
@@ -108,15 +129,15 @@
             <div class="footer__myInfo">
                 <h4>Informaciond de Contacto</h4>
                 <div class="footer__ubicacion ">
-                    <img src="./svg/home.svg" alt="" class="red__img">
+                    <img src="../svg/home.svg" alt="" class="red__img">
                     <span>ShoesMen</span>
                 </div>
                 <div class="footer__number ">
-                    <img src="./svg/phone.svg" alt="" class="red__img">
+                    <img src="../svg/phone.svg" alt="" class="red__img">
                     <span>+51 987 563 214</span>
                 </div>
                 <div class="footer__email ">
-                    <img src="./svg/gmail.svg" alt="" class="red__img">
+                    <img src="../svg/gmail.svg" alt="" class="red__img">
                     <span>ShoesMen @gmail.com</span>
                 </div>
             </div>
