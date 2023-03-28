@@ -264,12 +264,14 @@ body {
 }
 .main__producto .carousel .d-block {
   /* height: 300px; */
+  max-height: 80vh;
   overflow: cover;
 }
 .main__producto .carousel .carousel-caption > h5 {
   text-transform: uppercase;
   font-size: 80px;
   font-weight: bold;
+  text-shadow: 4px 4px black;
 }
 .main__producto .collage .collage__title {
   display: flex;
