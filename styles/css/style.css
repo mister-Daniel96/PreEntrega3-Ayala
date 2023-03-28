@@ -30,6 +30,8 @@ body {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  align-items: center;
 }
 
 .navbar {
@@ -59,8 +61,7 @@ body {
 .hero__main {
   display: flex;
   align-items: center;
-  flex-direction: row;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 .hero__main .hero__texts {
   width: 50%;
@@ -137,9 +138,13 @@ body {
   border-radius: 50%;
   display: block;
   margin: 5px auto;
+  object-fit: cover;
 }
 .section__cards .section__card .section__image .section__name h4 {
   font-size: 15px;
+}
+.section__cards .section__card .section__image .section__name .section__calificacion i {
+  color: rgb(184, 184, 73);
 }
 .section__cards .section__card .section__image > .star {
   width: 15px;
@@ -599,15 +604,14 @@ body {
   }
   /* ============== */
   .footer__redes {
-    width: 50%;
+    width: 100%;
     margin-top: 10px;
   }
   /* ==================== */
   .footer__myInfo {
-    width: 50%;
+    width: 100%;
     margin-top: 10px;
-    padding-left: 20px;
-    border-left: 1px solid white;
+    /*     padding-left: 20px; */
     /* overflow: hidden; */
   }
   .footer__myInfo h4 {
