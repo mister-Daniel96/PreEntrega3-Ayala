@@ -73,6 +73,7 @@ body {
     display: flex;
     align-items: center;
     padding-top: 50px;
+    justify-content: center;
 
     .hero__texts {
         width: 50%;
@@ -126,7 +127,6 @@ body {
     /* color: #243949; */
     color: black;
     width: 100%;
-    max-width: none;
     background-color: #ffff;
 
     &__title {
@@ -167,6 +167,7 @@ body {
 
                 .section__name h4 {
                     font-size: 15px;
+                    font-weight: 800;
                 }
 
                 .section__name {
@@ -186,7 +187,7 @@ body {
                 /* width: auto; */
                 font-size: 15px;
                 text-align: justify;
-                margin: 0 15px;
+                margin: auto 15px;
                 /*    margin-top: -25px; */
             }
         }
@@ -223,7 +224,7 @@ body {
     width: 30%;
 
     & h4 {
-        margin: 20px 0;
+        margin: 30px 0;
         text-align: justify;
     }
 
@@ -236,8 +237,8 @@ body {
 .footer__redes {
     width: 25%;
 
-    & h4 {
-        margin: 20px 0;
+    h4 {
+        margin: 30px 0;
     }
 
     .red {
@@ -247,7 +248,7 @@ body {
         justify-content: space-between;
         align-items: center;
 
-        & a {
+        a {
             text-decoration: none;
             color: #fff;
             display: flex;
@@ -276,7 +277,7 @@ body {
     width: 25%;
 
     & h4 {
-        margin: 20px 0;
+        margin: 30px 0;
     }
 
     .footer__ubicacion,
@@ -297,9 +298,9 @@ body {
     width: 100%;
     max-width: none;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-top: 1px solid black;
+    /* padding-top: 10px; */
+    /*  padding-bottom: 10px; */
+
 }
 
 /* PRODUCTOS */
@@ -309,19 +310,16 @@ body {
     background-color: rgba(0, 0, 0, 0.274);
     /* margin-bottom: 305px; */
     /*  min-height: 100vh; */
-    background-color: rgba(0, 0, 0, 0.274);
     /* margin-bottom: 305px; */
 
     .carousel {
         position: relative;
         z-index: 1;
 
-
-
         .d-block {
-            /* height: 300px; */
-            max-height: 80vh;
-            overflow: cover;
+
+            max-width: 1400px;
+            max-height: 580px;
         }
 
         .carousel-caption>h5 {
@@ -368,7 +366,7 @@ body {
                 background-repeat: no-repeat;
                 /*   overflow: hidden; */
                 place-items: center;
-                color: black;
+                color: white;
                 font-size: 40px;
                 font-weight: bold;
                 transition: 0.5s;
@@ -386,9 +384,9 @@ body {
                 transition: all 1s;
             }
 
-            .item1:hover {
+            /* .item1:hover {
                 background: linear-gradient(0deg, #243949 10%, #517fa446 100%), url(../../images/item1.jpg);
-            }
+            } */
 
             .item2 {
                 grid-area: item2;
@@ -437,6 +435,8 @@ body {
     /* sirve para la pantalla principal del Contacto */
     background-color: rgba(0, 0, 0, 0.274);
     /*   background-image: url(../images/formularioFondo.jpg); */
+    display: flex;
+    align-items: center;
 }
 
 /* .main__contacto__main {

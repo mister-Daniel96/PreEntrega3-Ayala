@@ -1,7 +1,16 @@
 /* HOME  */
 @media screen and (max-width:576px) {
 
+    .navbar-collapse {
+        display: block;
+        margin-right: 20px;
 
+        .navbar-nav {
+            .nav-item {
+                margin-left: auto;
+            }
+        }
+    }
 
     .hero__main {
         flex-direction: column-reverse;
@@ -81,12 +90,12 @@
     .footer__info {
         width: 100%;
 
-        & h4 {
+        h4 {
             display: flex;
             justify-content: center;
         }
 
-        & p {
+        p {
             text-align: justify;
         }
     }
@@ -95,6 +104,10 @@
     .footer__redes {
         width: 100%;
         margin-top: 10px;
+
+        h4 {
+            text-align: center;
+        }
     }
 
     /* ==================== */
@@ -218,6 +231,7 @@
         .question__item {
 
             flex-wrap: wrap;
+
             .name__item {
                 color: white;
             }
