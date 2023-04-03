@@ -42,8 +42,8 @@ body {
 }
 
 .fa-whatsapp {
- /*    display: block; */
-    color: #ffff;
+   
+    color: white;
     background-color: #008080;
     padding: 15px;
     border-radius: 50%;
@@ -55,6 +55,7 @@ body {
     z-index: 200;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
     flex-direction: row-reverse;
     transition: all 0.5s;
