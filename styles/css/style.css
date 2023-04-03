@@ -36,6 +36,10 @@ body {
 }
 
 .fa-whatsapp {
+  /*     display: flex; */
+  /*  flex-direction: row-reverse ; */
+  /*   align-items: center; */
+  /*  justify-content: center; */
   color: white;
   background-color: #008080;
   padding: 15px;
@@ -46,11 +50,7 @@ body {
   bottom: 10px;
   right: 10px;
   z-index: 200;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 10px;
-  flex-direction: row-reverse;
   transition: all 0.5s;
   cursor: pointer;
 }
@@ -67,6 +67,9 @@ body {
 }
 .fa-whatsapp:hover {
   border-radius: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
 }
 .fa-whatsapp:hover::after {
   display: inline-block;
@@ -288,6 +291,12 @@ body {
 }
 
 /* PRODUCTOS */
+.hero-productos {
+  min-height: 0;
+  background-image: none;
+  background-color: rgba(0, 0, 0, 0.274);
+}
+
 .main__producto {
   /*  min-height: 100vh; */
   background-color: rgba(0, 0, 0, 0.274);
