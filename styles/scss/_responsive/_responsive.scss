@@ -55,6 +55,25 @@
     }
 
 
+    .fa-whatsapp {
+ 
+        border-radius: 50%;
+        font-size: 30px;
+        padding: 10px 10px;
+        &::after {
+            font-size: 10px;
+        }
+    
+        &:hover{
+            border-radius: 10px;
+        }
+        &:hover::after {
+            display: inline-block;
+            color: black;
+        }
+        
+    }
+    
     /* COMENTARIO */
 
 

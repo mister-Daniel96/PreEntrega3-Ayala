@@ -35,6 +35,44 @@ body {
   align-items: center;
 }
 
+.fa-whatsapp {
+  /*    display: block; */
+  color: white;
+  background-color: #008080;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 50px;
+  font-weight: 800;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: row-reverse;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.fa-whatsapp::after {
+  content: "Contactanos";
+  display: inline-block;
+  font-size: 15px;
+  background-color: white;
+  padding: 10px 15px;
+  border: 2px solid black;
+  border-radius: 15px 15px 0 15px;
+  border: none;
+  display: none;
+}
+.fa-whatsapp:hover {
+  border-radius: 10px;
+}
+.fa-whatsapp:hover::after {
+  display: inline-block;
+  color: black;
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -299,6 +337,7 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  backdrop-filter: unset;
   /*   overflow: hidden; */
   place-items: center;
   color: white;
@@ -315,6 +354,7 @@ body {
   grid-area: item1;
   background-image: url(../../images/item1.jpg);
   transition: all 1s;
+  /* filter: grayscale(50%); */
 }
 .main__producto .collage .containerGrid .item2 {
   grid-area: item2;
@@ -585,6 +625,21 @@ body {
     display: block;
     margin: 0 auto;
     /*     filter: drop-shadow(1px 1px  10px black);  Lo que hace es que se sobre pone*/
+  }
+  .fa-whatsapp {
+    border-radius: 50%;
+    font-size: 30px;
+    padding: 10px 10px;
+  }
+  .fa-whatsapp::after {
+    font-size: 10px;
+  }
+  .fa-whatsapp:hover {
+    border-radius: 10px;
+  }
+  .fa-whatsapp:hover::after {
+    display: inline-block;
+    color: black;
   }
   /* COMENTARIO */
   .section__cards {

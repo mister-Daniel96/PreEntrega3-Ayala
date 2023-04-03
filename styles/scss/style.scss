@@ -37,7 +37,53 @@ body {
     background-attachment: fixed;
     display: flex;
     align-items: center;
+
+
 }
+
+.fa-whatsapp {
+ /*    display: block; */
+    color: #ffff;
+    background-color: #008080;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 50px ;
+    font-weight: 800;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: row-reverse;
+    transition: all 0.5s;
+    cursor: pointer;
+    &::after {
+        content: "Contactanos";
+        display: inline-block;
+        font-size: 15px;
+        background-color: white;
+        padding: 10px 15px;
+        border: 2px solid black;
+        border-radius: 15px 15px 0 15px;
+        border: none;
+        display: none;
+       
+    }
+
+    &:hover{
+        border-radius: 10px;
+    }
+    &:hover::after {
+        display: inline-block;
+        color: black;
+    }
+    
+}
+
+
+
 
 
 .navbar {
@@ -365,6 +411,7 @@ body {
                 background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
+                backdrop-filter: unset;
                 /*   overflow: hidden; */
                 place-items: center;
                 color: white;
@@ -383,6 +430,7 @@ body {
                 grid-area: item1;
                 background-image: url(../../images/item1.jpg);
                 transition: all 1s;
+                /* filter: grayscale(50%); */
             }
 
             /* .item1:hover {
