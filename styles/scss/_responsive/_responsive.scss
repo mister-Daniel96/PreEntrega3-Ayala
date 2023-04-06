@@ -92,7 +92,9 @@
         .section__card {
             width: 90%;
             flex-direction: column;
-
+            background-image: linear-gradient(90deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+            background-size: 100% 180px;
+            background-repeat: no-repeat;
             .section__image {
                 .section__img {
                     object-fit: cover;
@@ -225,6 +227,7 @@
             background-size: 100% 100px;
             background-position: bottom;
             background-repeat: no-repeat;
+            
 
             /*  */
             .nosotros-texto {
