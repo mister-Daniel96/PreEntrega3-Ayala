@@ -12,8 +12,14 @@
         }
     }
 
+    .nav-link {
+        font-weight: 600;
+        color: black;
+    }
+
     .hero__main {
         flex-direction: column-reverse;
+        padding-top: 5px;
 
         .hero__texts {
             width: 100%;
@@ -56,24 +62,26 @@
 
 
     .fa-whatsapp {
- 
+
         border-radius: 50%;
         font-size: 30px;
         padding: 10px 10px;
+
         &::after {
             font-size: 10px;
         }
-    
-        &:hover{
+
+        &:hover {
             border-radius: 10px;
         }
+
         &:hover::after {
             display: inline-block;
             color: black;
         }
-        
+
     }
-    
+
     /* COMENTARIO */
 
 
@@ -211,21 +219,32 @@
     .nosotros {
         &-card {
             @include flexDirection(column);
+            padding: 20px;
+            width: 80%;
+            background-image: linear-gradient(90deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+            background-size: 100% 100px;
+            background-position: bottom;
+            background-repeat: no-repeat;
 
             /*  */
             .nosotros-texto {
                 width: 100%;
-                /*  */
 
+                /*  */
+                p {
+                    text-align: justify;
+                }
             }
 
             .nosotros-img {
                 width: 100%;
+                padding-top: 10px;
+                padding-bottom: 10px;
 
-                & img {
+                img {
 
-                    width: 90%;
-                    /*  */
+                    width: 60%;
+
 
                 }
             }
