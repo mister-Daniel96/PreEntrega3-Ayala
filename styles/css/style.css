@@ -308,6 +308,7 @@ body {
   z-index: 1;
 }
 .main__producto .carousel .d-block {
+  margin: 0 auto;
   max-width: 1400px;
   max-height: 580px;
 }
@@ -730,9 +731,9 @@ body {
 /* PRODUCTO */
 @media screen and (max-width: 576px) {
   /* PRODUCTOS */
-  /* .main__producto {
-    
-  } */
+  .main__producto {
+    /* GRIDDDDDDDD */
+  }
   .main__producto .carousel .d-block {
     height: 300px;
   }

@@ -374,11 +374,12 @@ body {
     /* margin-bottom: 305px; */
 
     .carousel {
+
         position: relative;
         z-index: 1;
 
         .d-block {
-
+            margin: 0 auto;
             max-width: 1400px;
             max-height: 580px;
         }
