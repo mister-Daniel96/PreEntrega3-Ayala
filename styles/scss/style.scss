@@ -433,11 +433,12 @@ body {
                 font-size: 40px;
                 font-weight: bold;
                 transition: 0.5s;
+
             }
 
             .grid-item:hover {
                 font-size: 45px;
-                text-shadow: 4px 4px black;
+                text-shadow: 4px 4px 2px black;
                 color: white
             }
 
