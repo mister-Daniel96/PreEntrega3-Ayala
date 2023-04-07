@@ -737,8 +737,9 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     height: 150vh;
-display: flex;
-align-items: center;
+    display: flex;
+    align-items: center;
+
     .faq {
         .container-fluid {
             gap: 10px;
