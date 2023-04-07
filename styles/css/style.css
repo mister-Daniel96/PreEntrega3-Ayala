@@ -805,6 +805,7 @@ body {
 @media screen and (max-width: 576px) {
   /* PRODUCTOS */
   .main__producto {
+    border: 0;
     /* GRIDDDDDDDD */
   }
   .main__producto .carousel .d-block {
