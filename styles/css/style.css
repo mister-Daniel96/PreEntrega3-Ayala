@@ -198,7 +198,8 @@ body {
   /* width: auto; */
   font-size: 15px;
   text-align: justify;
-  margin: auto 15px;
+  /* margin: auto 15px; */
+  padding: 0 0 0 20px;
   /*    margin-top: -25px; */
 }
 
@@ -423,6 +424,7 @@ body {
   /* width: 30%; */
   max-height: 400px;
   margin: auto 0;
+  font-family: "Tilt Neon", "sans-serif";
 }
 .main__form .title__form .title-form {
   /* para desaparecer el colapso de margen 
@@ -471,7 +473,7 @@ body {
   width: 100%;
 }
 .main__form .questions .question__item textarea {
-  margin: auto 0;
+  margin: 0 auto;
   outline: none;
   padding: 10px;
 }
@@ -523,6 +525,7 @@ body {
 }
 .nosotros h1 {
   text-align: center;
+  font-family: "Tilt Neon", "sans-serif";
 }
 .nosotros-card {
   display: flex;
@@ -593,6 +596,7 @@ body {
 .main__faq .faq .container-fluid .faq_title {
   color: black;
   text-align: center;
+  font-family: "Tilt Neon", "sans-serif";
 }
 .main__faq .faq .container-fluid .row {
   padding: 10px 0;
@@ -610,14 +614,14 @@ body {
   color: black;
   font-size: 18px;
   text-align: center;
-  padding-left: 30px;
+  padding-left: 10px;
   padding-right: 10px;
   z-index: 100;
 }
 .main__faq .faq .container-fluid .row div p {
   margin-top: 15px;
   text-align: justify;
-  padding: 5px 10px 5px 45px;
+  padding: 5px 10px 5px 10px;
 }
 .main__faq .faq .container-fluid .row div::before {
   content: "";
@@ -637,6 +641,7 @@ body {
   height: 180px;
   overflow: none;
   z-index: 10;
+  background-color: #fff;
 }
 .main__faq .faq .container-fluid .row input {
   display: block;
@@ -680,6 +685,22 @@ body {
   } */
 }
 
+/* RESPONSIVE DE TABLET */
+@media screen and (max-width: 768px) {
+  /* COMENTARIOS */
+  .section__cards {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .section__cards .section__card {
+    width: 40%;
+    /* ssss */
+  }
+  /* FAQ */
+  .main__faq {
+    height: 200vh; /* SDDDD */
+  }
+}
 /* HOME  */
 @media screen and (max-width: 576px) {
   .navbar-collapse {
@@ -745,8 +766,9 @@ body {
   }
   /* COMENTARIO */
   .section__cards {
-    flex-wrap: wrap;
-    gap: 20px;
+    /* 
+    flex-wrap: wrap;*/
+    gap: 30px;
   }
   .section__cards .section__card {
     width: 90%;
@@ -871,18 +893,12 @@ body {
 }
 /* FAQ */
 @media screen and (max-width: 576px) {
-  .main__faq {
-    height: 200vh;
-  }
   .main__faq .faq .container-fluid .row div h5 {
     font-size: 16px;
   }
   .main__faq .faq .container-fluid .row div:hover {
     height: 190px;
     /* fff */
-  }
-  .main__faq .faq .container-fluid .row input {
-    padding: 10px 30px;
   }
 }
 /* CONTACTO */
