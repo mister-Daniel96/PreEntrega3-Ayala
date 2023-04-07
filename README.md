@@ -1,3 +1,3 @@
-# PreEntrega3-Ayala
+# PF+Ayala
 #Link correcto de la page 
-https://mister-daniel96.github.io/PreEntrega3-Ayala/
+  https://mister-daniel96.github.io/PF-Ayala/
