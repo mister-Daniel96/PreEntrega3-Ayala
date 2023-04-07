@@ -276,7 +276,7 @@
 
     .main__faq {
 
-        height: 210vh;
+        height: 200vh;
         .faq {
             .container-fluid {
                 .row {
@@ -320,7 +320,7 @@
             }
 
             .input {
-                width: 100%;
+                width: 100% ;
             }
 
             & textarea {
@@ -336,7 +336,7 @@
 
             .input-text {
                 resize: none;
-                width: 300px;
+                width: 100%;
                 border-radius: 5px;
             }
         }
