@@ -98,14 +98,14 @@
 
 
             .section__image {
-               
+
                 .section__img {
                     object-fit: cover;
-                    border:5px solid #fff;
+                    border: 5px solid #fff;
                     border-radius: 50%;
                 }
             }
-         
+
 
         }
     }
@@ -175,7 +175,7 @@
     /* PRODUCTOS */
 
     .main__producto {
-
+        
         .carousel {
             .d-block {
                 height: 300px;
@@ -233,7 +233,7 @@
             background-size: 100% 100px;
             background-position: bottom;
             background-repeat: no-repeat;
-            
+
 
             /*  */
             .nosotros-texto {
@@ -268,6 +268,102 @@
 
 
     }
+}
+
+/* FAQ */
+@media screen and (max-width:576px) {
+
+    .main__faq {
+        /*     background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+ */
+        background-image: linear-gradient(to top, #88d3ce7c 0%, #6f45e2a4 100%), url(../../images/faq.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 170vh;
+
+        .faq {
+            .container-fluid {
+                gap: 10px;
+
+                .faq_title {
+                    color: black;
+                    text-align: center;
+                }
+
+                .row {
+                    padding: 10px 0;
+                    justify-content: space-around;
+
+                    div {
+                        border: 1px solid rgba(0, 0, 0, 0.274);
+                        padding: 10px 0;
+                        height: 40px;
+                        overflow-y: hidden;
+                        transition: all 0.9s;
+                        position: relative;
+
+                        a {
+                            text-decoration: none;
+                            color: black;
+                            text-align: center;
+                            padding-left: 30px;
+                            padding-right: 10px;
+                            z-index: 100;
+                        }
+
+                        p {
+                            text-align: justify;
+                            padding: 5px 10px 5px 45px;
+                        }
+
+                        &::before {
+                            content: "";
+                            background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+                            height: 40px;
+                            width: 100%;
+                            position: absolute;
+                            top: -40px;
+                            left: 0;
+                            z-index: -10;
+                            transition: all 0.5s;
+                        }
+
+                        &:hover::before {
+                            top: 0;
+
+                        }
+
+                        &:hover {
+                            height: 100px;
+                            overflow: none;
+                            z-index: 10;
+                        }
+                    }
+
+                    input {
+                        display: block;
+                        padding: 20px 0;
+                        width: 20%;
+                        margin: 0 auto;
+                        margin-bottom: 20px;
+                    }
+
+                    input[type="text"] {
+                        display: block;
+                        outline: none;
+                        width: 80%;
+                        margin: 0 auto;
+                        margin-bottom: 40px;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
 }
 
 /* CONTACTO */
@@ -320,5 +416,4 @@
             margin-top: 30px
         }
     }
-
 }
