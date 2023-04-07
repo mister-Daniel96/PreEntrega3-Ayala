@@ -406,6 +406,7 @@ body {
             margin-bottom: 20px;
             font-weight: bold;
             border-bottom: 3px solid white;
+            font-family: $estilo-principal;
         }
 
         .containerGrid {
@@ -434,12 +435,12 @@ body {
                 font-size: 40px;
                 font-weight: bold;
                 transition: 0.5s;
-
+                text-shadow: 4px 4px 4px black;
             }
 
             .grid-item:hover {
                 font-size: 45px;
-                text-shadow: 4px 4px 2px black;
+                text-shadow: 4px 4px 8px black;
                 color: white
             }
 

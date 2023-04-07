@@ -326,6 +326,7 @@ body {
   margin-bottom: 20px;
   font-weight: bold;
   border-bottom: 3px solid white;
+  font-family: "Tilt Neon", "sans-serif";
 }
 .main__producto .collage .containerGrid {
   width: 90%;
@@ -353,10 +354,11 @@ body {
   font-size: 40px;
   font-weight: bold;
   transition: 0.5s;
+  text-shadow: 4px 4px 4px black;
 }
 .main__producto .collage .containerGrid .grid-item:hover {
   font-size: 45px;
-  text-shadow: 4px 4px 2px black;
+  text-shadow: 4px 4px 8px black;
   color: white;
 }
 .main__producto .collage .containerGrid .item1 {
@@ -849,11 +851,11 @@ body {
     gap: 5px;
   }
   .main__producto .collage .containerGrid .grid-item {
-    font-size: 20px;
+    font-size: 30px;
     color: white;
   }
   .main__producto .collage .containerGrid .grid-item:hover {
-    font-size: 25px;
+    font-size: 40px;
     text-shadow: 2px 2px black;
   }
 }
