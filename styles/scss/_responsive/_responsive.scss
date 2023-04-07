@@ -281,13 +281,20 @@
             .container-fluid {
                 .row {
                     div {
+                        h5{
+                            font-size: 16px;
+                        }
                         &:hover {
                             height: 190px;
                             /* fff */
 
                         }
                     }
-
+                    input {
+                     
+                        padding: 10px 30px;
+                      
+                    }
 
                 }
             }
